@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/style.css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Real Estate</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Real Estate</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#service">Services <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/login">Login <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact Us <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" list="search">
+                    <datalist id="search">
+                        <option value="Bhopal" />
+                        <option value="Indore" />
+                        <option value="Jabalpur" />
+                        <option value="Pune" />
+                        <option value="Delhi" />
+                        <option value="Mumbai" />
+                    </datalist>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid section1 u-100">
+            <div class="row u-100 align-items-center">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <h3>Welcome To RealEstate.com
+                    </h3>
+
+                    <h1>Our Website Works in <span class="change_content"> </span>
+                    </h1>
+
+                    <p>"India's No. 1 Website For Real Estate"</p>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container text-center py-5">
+                <h3>About our Services</h3>
+                <hr style="background-color: white;">
+                <div class="row temp">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-home" style="font-size:48px;color: green"></i>
+                                <h2>Best Quality</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a praesentium nobis rerum iure labore nulla consequatur adipisci itaque cupiditate. Possimus suscipit hic natus qui expedita modi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-balance-scale" style="font-size:48px;color: green"></i>
+                                <h2>Best Price</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a praesentium nobis rerum iure labore nulla consequatur adipisci itaque cupiditate. Possimus suscipit hic natus qui expedita modi. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa fa-bar-chart" style="font-size:48px;color: green"></i>
+                                <h2>Best Service</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a praesentium nobis rerum iure labore nulla consequatur adipisci itaque cupiditate. Possimus suscipit hic natus qui expedita modi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container section2" id="service">
+            <h3 class="text-center">Services</h3>
+            <hr style="background-color: white;">
+            <div class="row mb-5 mx-5" id="row1">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sweet Home</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 mx-5" id="row2">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5 mx-5" id="row3">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/img1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-success">Property View</a>
+                            <a href="#" class="btn btn-success">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item" id="id1"><a class="page-link" href="#row1">1</a></li>
+                    <li class="page-item" id="id2"><a class="page-link" href="#row2">2</a></li>
+                    <li class="page-item" id="id3"><a class="page-link" href="#row3">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+    <div class="container">
+        <hr style="background-color: white;">
+    </div>
+    <footer class="container text-center">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <h4>About Us</h4>
+                <p>
+                    At RealEstate.com, we understand that people everywhere are searching for a home to call their own. We want to make this search as joyful as finally finding the perfect home because we understand that finding a home is much more than an online search!
+                    A home is a cherished memory that lasts forever, it is where the walls embrace memories, the ceilings shelter love and laughter, where the quiet corners offer a much-needed pause and life itself becomes a reason to celebrate.So to
+                    make this journey joyful, we begin by partnering with our customers from the start and being there when it matters the most - right from online search to brokers to home loans to paperwork to finally finding that perfect home. At RealEstate.com,
+                    we not only help you search but help you find. we help you find joy. RealEstate.com is part of ABC technologies pte limited, delhi which also owns and operates proptiger.com, a digital real estate marketing and transactions services
+                    provider. news corp, a global media, book publishing and digital real estate services company, is the key investor in elara. elara's other major investors include saif partners, accel partners and RP investments.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="container-fluid">
+                    <div class="row text-center">
+                        <div class="col-md-6 mx-auto">
+                            <h3>Important Links</h3>
+                            <ul>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>WhatsApp</li>
+                                <li>Telegram</li>
+                            </ul>
+                        </div>
+                        <div class="container">
+                            <hr style="background-color: white;">
+                        </div>
+                        <div class="col-md-6 mx-auto">
+                            <h3>Office Address</h3>
+                            <p>112 Narsinghpur</p>
+                            <p>Madhya Pradesh India</p>
+                            <p>+91 7770944694</p>
+                            <p id="footer-mail">
+                                <span>Help Mail : </span>
+                                <a href="mailto:realestate@yahoo.com?subject=Help Query">RealEstate@Yahoo.com</a></p>
+                            <div class="container-fluid">
+                                <hr style="background-color: white;">
+                            </div>
+                            <h6>Copyright @ 2021 - Team 1</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <script src="js/script.js" th:src="@{/js/script.js}"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+</body>
+
+</html>
