@@ -65,7 +65,7 @@ public class HomeController {
 		userservice.setUser(user);
 		m.addAttribute("user", user);
 		System.out.println("Registered Successfully");
-		return "login";
+		return "userDashboard";
 	}
 	@RequestMapping("/forgetPassword")
 	public String forgetPasswordPage() {
@@ -74,11 +74,14 @@ public class HomeController {
 	@PostMapping("/forgetPassword")
 	public String forgetPassword(@RequestParam("email") String email,
 			@RequestParam("password") String password,Model m) {
-		User u=userservice.findUserByEmail(email);
-		if(u.getUserEmail().equals(email)) {
-			u.setUserPassword(password);
+		
+		User u2=userservice.findUserByEmail(email);
+		if(u2.getUserEmail().equals(email)) {
+			u2.setUserPassword(password);
+			
+			userservice.setUser(u2);
 			System.out.println("Password Reset Successfully");
-			m.addAttribute("user", u);
+			
 			return "login";
 		}
 		else {
